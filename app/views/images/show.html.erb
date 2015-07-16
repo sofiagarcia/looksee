@@ -6,11 +6,6 @@
 </p>
 
 <p>
-  <strong>Url:</strong>
-  <%= image_tag @image.url %>
-</p>
-
-<p>
   <strong>Description:</strong>
   <%= @image.description %>
 </p>
@@ -19,6 +14,11 @@
   <strong>Year:</strong>
   <%= @image.year %>
 </p>
+
+<p>
+  <%= image_tag @image.picture %>
+</p>
+
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>
