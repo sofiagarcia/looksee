@@ -10,6 +10,42 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+
+ #sidebar, .intro {
+ 	/*margin-left: -.5em;*/
+	margin-top: -.8em;
+ }
+
+#sidebar {
+	font-family: 'Cutive Mono', ;
+	background-color: #465975;
+	height: 1000px;
+	width: 250px;
+	position: fixed;
+	margin-left: -.5em;
+	/*margin-top: -.5em;*/
+
+
+}
+
+.navigation ul {
+	list-style-type: none;
+	padding-top: 1em;
+	padding-right: 4em;
+	line-height: 1.4em;
+	font-size: 20px;
+	position: static;
+
+	
+}
+
+.intro{
+	text-align: left;
+	padding-top: 2em;
+	width: auto;
+	height: auto;
+	margin-left: 240px;
+
+
+}
