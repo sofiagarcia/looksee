@@ -17,7 +17,7 @@
     <% @images.each do |image| %>
       <tr>
         <td><%= image.title %></td>
-        <td><%= image.url %></td>
+        <td><%= image_tag image.url %></td>
         <td><%= image.description %></td>
         <td><%= image.year %></td>
         <td><%= link_to 'Show', image %></td>
