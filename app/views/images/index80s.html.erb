@@ -1,23 +1,23 @@
 <div id='sidebar'>
 
 <aside class='navigation'>
-	<nav>
-		<ul>
+  <nav>
+    <ul>
             <div class='logo'><strong><li>Looksee</li></strong></div>
             <br>
             <br>
 
-        	<li>Home</li>
+          <li>Home</li>
             <li>Galleries</li>
-            	<ul class='drop'>
-            	<li><%= link_to '50s', fifties_path %></li>
-            	<li><%= link_to '60s', sixties_path %></li>
-            	<li><%= link_to '70s', seventies_path %></li>
+              <ul class='drop'>
+              <li><%= link_to '50s', fifties_path %></li>
+              <li><%= link_to '60s', sixties_path %></li>
+              <li><%= link_to '70s', seventies_path %></li>
               <li><%= link_to '80s', eighties_path %></li>
               <li><%= link_to '90s', nineties_path %></li>
               <li><%= link_to '00s', twothou_path %></li>
               <li><%= link_to '10s', twothouten_path %></li>
-            	</ul>
+              </ul>
                 <br>
                 <br>
 
@@ -29,13 +29,52 @@
             <a href="https://instagram.com/sofiagarcia/" target="_blank"><img src="http://i229.photobucket.com/albums/ee313/abyles/05955ac9-16f0-43bd-820a-696f4d87fd86.png" border="0" alt=" photo 05955ac9-16f0-43bd-820a-696f4d87fd86.png"/></a>
 
         </ul>
-	</nav>
+  </nav>
 </aside>
 
 </div>
 
+
+<p id="notice"><%= notice %></p> 
+
 <section class="intro">
-    <h1> About </h1>
-			<p>   Looksee is an archive dedicated to the history of computer-generated art. Starting with the first ‘digital abstractions’ from 1950 to Google’s Deep Dream software of today, our mission is to document the interaction between technology and human creativity. We encourage you and the community to contribute meaningful and informative content dedicated to the history of digital art. Feel free to explore our collections for inspiration. Go ahead, take a looksee.</p>
-			<button type="button"><%= link_to 'Explore >', fifties_path%> </button>
+    
+    <h1> 1980's Gallery </h1>
+
+
+    <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Year</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @images80s.each do |image| %>
+      <tr>
+        <td><%= image.title %></td>
+        <td><%= image.description %></td>
+        <td><%= image.year %></td>
+        <td><%= image_tag image.picture.url(:preview) %></td>
+        <td><%= link_to 'Show', image %></td>
+        <td><%= link_to 'Edit', edit_image_path(image) %></td>
+        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Image', new_image_path %>
+
+
+
 </section>
+
+
+
+

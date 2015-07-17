@@ -2,7 +2,21 @@ Rails.application.routes.draw do
   resources :images
 
   root 'homepage#homepage'
-  
+
+  get 'fifties', to: 'images#index50s'
+
+  get 'sixties', to: 'images#index60s'
+
+  get 'seventies', to: 'images#index70s'
+
+  get 'eighties', to: 'images#index80s'
+
+  get 'nineties', to: 'images#index90s'
+
+  get 'twothou', to: 'images#index00s'
+
+  get 'twothouten', to: 'images#index10s'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
