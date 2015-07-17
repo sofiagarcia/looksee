@@ -7,6 +7,34 @@ class ImagesController < ApplicationController
     @images = Image.all
   end
 
+  def index50s
+    @images50s = Image.where( year: (1950..1959))
+  end
+
+  def index60s
+    @images60s = Image.where( year: (1960..1969))
+  end
+
+  def index70s
+    @images70s = Image.where( year: (1970..1979))
+  end
+
+  def index80s
+    @images80s = Image.where( year: (1980..1989))
+  end
+
+  def index90s
+    @images90s = Image.where( year: (1990..1999))
+  end
+
+  def index00s
+    @images00s = Image.where( year: (2000..2009))
+  end
+
+  def index10s
+    @images10s = Image.where( year: (2010..2015))
+  end
+
   # GET /images/1
   # GET /images/1.json
   def show
