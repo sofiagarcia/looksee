@@ -1,8 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong class= "title">Title:</strong>
   <%= @image.title %>
+</p>
+
+<p>
+  <strong class= "image">Url:</strong>
+  <%= image_tag @image.url %>
 </p>
 
 <p>
@@ -14,11 +19,6 @@
   <strong>Year:</strong>
   <%= @image.year %>
 </p>
-
-<p>
-  <%= image_tag @image.picture %>
-</p>
-
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>
