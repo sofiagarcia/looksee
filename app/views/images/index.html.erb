@@ -50,25 +50,23 @@
 
 
 <table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Year</th>
+  <!-- <thead> -->
+    <!-- <tr> -->
+      <!-- <th>Title</th> -->
+      <!-- <th>Description</th> -->
+      <!-- <th>Year</th> -->
       <th colspan="3"></th>
-    </tr>
-  </thead>
+    <!-- </tr> -->
+  <!-- </thead> -->
 
   <tbody>
     <% @images.each do |image| %>
       <tr>
-        <td><%= image.title %></td>
-        <td><%= image.description %></td>
-        <td><%= image.year %></td>
-        <td><%= image_tag image.picture.url(:preview) %></td>
-        <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        <%= link_to image do %>
+      <div class= "collection_img"  <td><%= image_tag image.picture.url(:preview)  %></td></div>
+      <% end %>
+
       </tr>
     <% end %>
   </tbody>

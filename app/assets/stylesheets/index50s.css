@@ -1,56 +1,71 @@
-<<<<<<< HEAD
-.table {
-  text-align: center;
-}
-=======
+
 #sidebar, .intro {
- 	/*margin-left: -.5em;*/
-	margin-top: -.8em;
- }
+  /*margin-left: -.5em;*/
+ margin-top: -.8em;
+}
 
 #sidebar {
-	font-family: 'Cutive Mono', ;
-	background-color: #465975;
-	height: 1000px;
-	width: 250px;
-	position: fixed;
-	margin-left: -.5em;
-	/*margin-top: -.5em;*/
-
-
+ font-family: 'Cutive Mono', ;
+ background-color: #465975;
+ height: 1000px;
+ width: 250px;
+ position: fixed;
+ margin-left: -.5em;
+ /*margin-top: -.5em;*/
 }
 
 .logo{
-  font-family:monospace;
-  font-size: 40px;
+ font-family:monospace;
+ font-size: 40px;
+ a: {color: #F49D37; text-decoration: none; }
 }
+
+
 .navigation ul {
-	list-style-type: none;
-	padding-top: 1em;
-	padding-right: 4em;
-	line-height: 1.4em;
-	font-size: 20px;
-	position: static;
-  color: #E7D7C1;
-  a:link {color: #E7D7C1; text-decoration: none; }
-  a:visited {color: #F49D37; text-decoration: none; }
+ list-style-type: none;
+ padding-top: 1em;
+ padding-right: 4em;
+ line-height: 1.4em;
+ font-size: 20px;
+ position: static;
+   color: #E7D7C1;
+   a:link {color: #E7D7C1; text-decoration: none; }
+   a:visited {color: #E7D7C1; text-decoration: none; }
+   a:hover {color: #F49D37; text-decoration: none; }
 }
 
 
-.intro h1, table {
-  font-family: "Cutive Mono";
-  font-weight: bold;
-  font-size: 270%;
-  text-align: center;
+
+.intro h1{
+ font-family: "Cutive Mono";
+ font-weight: bold;
+ font-size: 270%;
+ text-align: center;
 }
+
+
 .intro{
-	text-align: justify;
-	padding-top: 7.5em;
-	width: auto;
-	height: auto;
-	margin-left: 240px;
-  	padding-left: 5em;
-  	padding-right: 7em;
-  	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ text-align: center;
+ padding-top: 7.5em;
+ width: auto;
+ height: auto;
+ margin-left: 240px;
+   padding-left: 5em;
+   padding-right: 7em;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   line-height: 1.4em;
+
 }
->>>>>>> c5ebea6bd0250eb36092b857eecfb8fa888f8ed6
+
+
+.button{
+ color: #F49D37;
+ width: 200px;
+ height: 100px;
+ text-align: center;
+}
+
+p {
+ text-align: center;
+ padding-top: 25px;
+}

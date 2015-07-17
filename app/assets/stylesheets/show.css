@@ -1,4 +1,5 @@
-#sidebar, .intro {
+
+ #sidebar, .intro {
  	/*margin-left: -.5em;*/
 	margin-top: -.8em;
  }
@@ -11,14 +12,15 @@
 	position: fixed;
 	margin-left: -.5em;
 	/*margin-top: -.5em;*/
-
-
 }
 
 .logo{
   font-family:monospace;
   font-size: 40px;
+  a: {color: #F49D37; text-decoration: none; }
 }
+
+
 .navigation ul {
 	list-style-type: none;
 	padding-top: 1em;
@@ -26,20 +28,24 @@
 	line-height: 1.4em;
 	font-size: 20px;
 	position: static;
-  color: #E7D7C1;
-  a:link {color: #E7D7C1; text-decoration: none; }
-  a:visited {color: #F49D37; text-decoration: none; }
+  	color: #E7D7C1;
+  	a:link {color: #E7D7C1; text-decoration: none; }
+  	a:visited {color: #E7D7C1; text-decoration: none; }
+  	a:hover {color: #F49D37; text-decoration: none; }
 }
 
 
-.intro h1, table {
+
+.intro h1{
   font-family: "Cutive Mono";
   font-weight: bold;
   font-size: 270%;
   text-align: center;
 }
+
+
 .intro{
-	text-align: justify;
+	text-align: center;
 	padding-top: 7.5em;
 	width: auto;
 	height: auto;
@@ -47,9 +53,12 @@
   	padding-left: 5em;
   	padding-right: 7em;
   	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  	line-height: 1.4em;
+
 }
 
 p {
   text-align: center;
-  padding-top: 25px;
+  font-family: "Cutive Mono";
+
 }

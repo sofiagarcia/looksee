@@ -13,6 +13,7 @@
 #sidebar, .intro {
  	/*margin-left: -.5em;*/
 	margin-top: -.8em;
+  /*text-decoration: none;*/
  }
 
 #sidebar {
@@ -41,4 +42,10 @@
   color: #E7D7C1;
   a:link {color: #E7D7C1; text-decoration: none; }
   a:visited {color: #F49D37; text-decoration: none; }
+}
+
+.collection_img{
+
+  display: inline-grid;
+
 }
