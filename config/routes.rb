@@ -17,6 +17,8 @@ Rails.application.routes.draw do
 
   get 'twothouten', to: 'images#index10s'
 
+  get 'homepage', to: 'homepage#homepage'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
