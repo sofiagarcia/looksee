@@ -10,6 +10,13 @@ group :production do
   gem 'rails_12factor'
 
 end
+
+#Use CarrierWave and AWS S3 for file uploads
+gem 'carrierwave'
+gem 'fog'
+gem 'figaro'
+gem 'mini_magick'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
