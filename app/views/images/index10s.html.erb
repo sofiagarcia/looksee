@@ -1,14 +1,59 @@
+<div id='sidebar'>
+
+<aside class='navigation'>
+  <nav>
+    <ul>
+      <div class='logo'><strong><li><%= link_to 'Looksee', root_path %></li></strong></div>
+      <br>
+      <br>
+
+      <li><%= link_to 'Home', root_path %></li>
+        <li>Galleries</li>
+              <ul class='drop'>
+              <li><%= link_to '50s', fifties_path %></li>
+              <li><%= link_to '60s', sixties_path %></li>
+              <li><%= link_to '70s', seventies_path %></li>
+              <li><%= link_to '80s', eighties_path %></li>
+              <li><%= link_to '90s', nineties_path %></li>
+              <li><%= link_to '00s', twothou_path %></li>
+              <li><%= link_to '10s', twothouten_path %></li>
+              </ul>
+                <br>
+                <br>
+
+            <li>Connect with us!</li>
+            <br>
+
+            <a href="https://github.com/sofiagarcia/looksee" target="_blank"><img src="http://i229.photobucket.com/albums/ee313/abyles/5511439e-087e-4434-a0b3-75732ec4d644.png" border="0" alt=" photo 5511439e-087e-4434-a0b3-75732ec4d644.png"/></a>
+
+            <a href="https://instagram.com/sofiagarcia/" target="_blank"><img src="http://i229.photobucket.com/albums/ee313/abyles/05955ac9-16f0-43bd-820a-696f4d87fd86.png" border="0" alt=" photo 05955ac9-16f0-43bd-820a-696f4d87fd86.png"/></a>
+
+        </ul>
+  </nav>
+</aside>
+
+</div>
+
+
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Images</h1>
+<section class="intro">
 
-<table>
+  <%= link_to images_path do %>
+    <%= image_tag "http://i229.photobucket.com/albums/ee313/abyles/0b44a6a4-b2c5-46e4-ad2e-44aa2a115d0a.png" %>
+  <% end %>
+  <br>
+
+    <h1> 2010's Gallery </h1>
+
+
+    <table>
   <thead>
     <tr>
       <th>Title</th>
       <th>Description</th>
       <th>Year</th>
-      <th colspan="3"></th>
+      <th colspan="6"></th>
     </tr>
   </thead>
 
@@ -30,3 +75,7 @@
 <br>
 
 <%= link_to 'New Image', new_image_path %>
+
+
+
+</section>
