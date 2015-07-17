@@ -38,5 +38,5 @@
 <section class="intro">
     <h1> About </h1>
 			<p>   Looksee is an archive dedicated to the history of computer-generated art. Starting with the first ‘digital abstractions’ from 1950 to Google’s Deep Dream software of today, our mission is to document the interaction between technology and human creativity. We encourage you and the community to contribute meaningful and informative content dedicated to the history of digital art. Feel free to explore our collections for inspiration. Go ahead, take a looksee.</p>
-			<button type="button"><%= link_to 'Explore >', images_path%> </button>
+			<%= button_to "Explore >", images_path, method: :get, class: "btn btn-default btn-lg" %>
 </section>
