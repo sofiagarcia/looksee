@@ -3,12 +3,12 @@
 <aside class='navigation'>
   <nav>
     <ul>
-            <div class='logo'><strong><li>Looksee</li></strong></div>
-            <br>
-            <br>
+      <div class='logo'><strong><li><%= link_to 'Looksee', homepage_path %></li></strong></div>
+      <br>
+      <br>
 
-          <li>Home</li>
-            <li>Galleries</li>
+    <li><%= link_to 'Home', homepage_path %></li>
+      <li>Galleries</li>
               <ul class='drop'>
               <li><%= link_to '50s', fifties_path %></li>
               <li><%= link_to '60s', sixties_path %></li>
@@ -35,10 +35,10 @@
 </div>
 
 
-<p id="notice"><%= notice %></p> 
+<p id="notice"><%= notice %></p>
 
 <section class="intro">
-    
+
     <h1> 2010's Gallery </h1>
 
 
@@ -74,7 +74,3 @@
 
 
 </section>
-
-
-
-
