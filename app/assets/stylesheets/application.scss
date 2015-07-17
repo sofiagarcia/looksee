@@ -29,6 +29,9 @@
 
 }
 
+.logo{
+  font-family:monospace;
+}
 .navigation ul {
 	list-style-type: none;
 	padding-top: 1em;
@@ -36,16 +39,29 @@
 	line-height: 1.4em;
 	font-size: 20px;
 	position: static;
-
-	
+  color: #E7D7C1;
+  a:link {color: #E7D7C1; text-decoration: none; }
+  a:visited {color: #F49D37; text-decoration: none; }
 }
 
+.intro h1{
+  font-family: "Cutive Mono";
+  font-weight: bold;
+  font-size: 270%;
+}
 .intro{
-	text-align: left;
-	padding-top: 2em;
+	text-align: center;
+	padding-top: 7.5em;
 	width: auto;
 	height: auto;
 	margin-left: 240px;
+  padding-left: 5em;
+  padding-right: 7em;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
-
+.button{
+  color: #bbbbbb;
+  width: 200px;
+  height: 100px;
 }
