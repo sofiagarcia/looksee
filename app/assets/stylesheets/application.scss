@@ -25,14 +25,15 @@
 	position: fixed;
 	margin-left: -.5em;
 	/*margin-top: -.5em;*/
-
-
 }
 
 .logo{
   font-family:monospace;
   font-size: 40px;
+  a: {color: #F49D37; text-decoration: none; } 
 }
+
+
 .navigation ul {
 	list-style-type: none;
 	padding-top: 1em;
@@ -40,10 +41,13 @@
 	line-height: 1.4em;
 	font-size: 20px;
 	position: static;
-  color: #E7D7C1;
-  a:link {color: #E7D7C1; text-decoration: none; }
-  a:visited {color: #F49D37; text-decoration: none; }
+  	color: #E7D7C1;
+  	a:link {color: #E7D7C1; text-decoration: none; }
+  	a:visited {color: #E7D7C1; text-decoration: none; }
+  	a:hover {color: #F49D37; text-decoration: none; }
 }
+
+
 
 .intro h1{
   font-family: "Cutive Mono";
@@ -51,6 +55,8 @@
   font-size: 270%;
   text-align: center;
 }
+
+
 .intro{
 	text-align: center;
 	padding-top: 7.5em;
@@ -69,6 +75,4 @@
   width: 200px;
   height: 100px;
   text-align: center;
-
-
 }
