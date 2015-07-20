@@ -11,6 +11,9 @@ group :production do
 
 end
 
+# User Devise for user authentication
+gem 'devise'
+
 #Use CarrierWave and AWS S3 for file uploads
 gem 'carrierwave'
 gem 'fog'
